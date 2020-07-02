@@ -12,16 +12,17 @@
 - [x] Smiles support
 - [x] Unread messages count in the chat tab
 - [x] User can modify the following settings:
-	1. User name;
-	2. Interface color;
-		a. Light;
-		b. Dark;
-	3. Clock Display;
-		a. 12 hours;
-		b. 24 hours;
-	4. Send messages on CTRL+ENTER;
-		a. On; b. Off;
-	5. Internationalization (the application supports English and French);
+	- User name;
+	- Interface color;
+		- Light;
+		- Dark;
+	- Clock Display;
+		- 12 hours;
+		- 24 hours;
+	- Send messages on CTRL+ENTER;
+		- On; 
+        - Off;
+	- Internationalization (the application supports English and French);
 - [x] All settings are saved in local storage and there is a button “Reset to defaults”, by clicking on it application falls back to default settings.
 - [x] React used as framework;
 - [x] Used CSS preprocessor;
