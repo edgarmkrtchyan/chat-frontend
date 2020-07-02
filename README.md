@@ -1,6 +1,31 @@
 # Chat Frontend
 
-# Required Features List
+# What is it
+
+## How does it work
+
+## Setup instructions
+
+I've deployed both the front-end and server components to Heroku. You can test the chat visiting the following links:
+
+User 1: http://localhost:3000/chat?userName=FirstUser&chatRoom=doclerRoom
+User 2: http://localhost:3000/chat?userName=SecondUser&chatRoom=doclerRoom
+
+Or you can clone the code from the repository and run:
+
+```bash
+npm install
+```
+
+After all of the components are installed run the following in terminal:
+
+```bash
+npm start
+```
+
+This will run the application on your local machine
+
+## Required Features List
 
 - [x] A socket.io based chat interface. 
 - [x] The UI based on the mockups.
