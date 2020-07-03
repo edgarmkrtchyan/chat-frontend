@@ -1,0 +1,11 @@
+.messages-area {
+    height: calc(100vh - 88px);
+    overflow-y: auto;
+    padding: 10px 0;
+    box-sizing: border-box;
+
+    ul {
+        list-style: none;
+        padding: 0 10px;
+    }
+}

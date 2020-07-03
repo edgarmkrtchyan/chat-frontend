@@ -2,11 +2,31 @@
 
 # What is it
 
+This application is a socket.io based chat. It allows users to chat in the given Chat Room.
+
 ## How does it work
+
+The chat initiates the session if it's supplied a userName and a chatRoom in the query parameters (done in query parameters for simplicity sake). When the users join the Chat room, a notification is fired to the rest of the participants letting them know that new users joined. 
+
+The users can send chat messages to each others. There's also a smileys support. Each smiley such as :) or ;) will be converted to a smiley image.
+
+The Chat also has a Settings section where the users can change the following settings:
+
+- User name;
+- Interface color;
+	- Light;
+	- Dark;
+- Clock Display;
+	- 12 hours;
+	- 24 hours;
+- Send messages on CTRL+ENTER;
+	- On; 
+	- Off;
+- Language (the application supports English and French);
 
 ## Setup instructions
 
-I've deployed both the front-end and server components to Heroku. You can test the chat visiting the following links:
+The Chat application is deployed to Heroku. You can test the chat visiting the following links:
 
 User 1: http://localhost:3000/chat?userName=FirstUser&chatRoom=doclerRoom
 User 2: http://localhost:3000/chat?userName=SecondUser&chatRoom=doclerRoom
@@ -23,7 +43,27 @@ After all of the components are installed run the following in terminal:
 npm start
 ```
 
-This will run the application on your local machine
+The Chat server repository is located here:
+
+https://github.com/edgarmkrtchyan/chat-server
+
+To run it locally you'll need to clone the repository to your local machine and run:
+
+```bash
+npm install
+```
+
+After all of the components are installed run the following in terminal:
+
+```bash
+npm start
+```
+
+Once both front-end and server components are installed and run on local machine you will be able to use the Chat visiting the following links (given port 3000 was not busy on your machine when you run npm start for front-end, then you should change the port in the links below to the one the application runs on your machine):
+
+User 1: http://localhost:3000/chat?userName=FirstUser&chatRoom=doclerRoom
+User 2: http://localhost:3000/chat?userName=SecondUser&chatRoom=doclerRoom
+
 
 ## Required Features List
 
@@ -37,7 +77,7 @@ This will run the application on your local machine
 - [x] Smiles support
 - [x] Unread messages count in the chat tab
 - [x] User can modify the following settings:
-	- User name;
+	- User name (this is reflected in user's Settings section only - there was no reliable way to show the edited username to the other users in Chat as user name is an identifier telling if the message shown was sent by the current user);
 	- Interface color;
 		- Light;
 		- Dark;

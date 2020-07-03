@@ -1,0 +1,76 @@
+.chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+
+    .left {
+        flex: 0.5;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    .right {
+        display: flex;
+        flex: 0.5;
+        justify-content: flex-end;
+    }
+
+    ul {
+        display: inline;
+        margin-left: 10px;
+        padding-left: 0;
+
+        .active {
+            border-bottom: 2px solid white;
+        }
+    }
+    
+    li {
+        display: inline;
+        margin-right: 20px;
+
+        button {
+            color: #fff;
+            text-decoration: none;
+            background: none;
+            border: none;
+        }
+
+        & button:focus {
+            outline: none;
+        }
+    }
+
+    & li:last-child {
+        margin-right: 0;
+    }
+}
+
+.unseen-messages-badge {
+    background-color: red;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 4px;
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
