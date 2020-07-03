@@ -20,7 +20,7 @@ const Chat: React.FC<RouteComponentProps> = props => {
     const [message, setMessage] = useState('');
     const [selectedTabIdentifier, setSelectedTabIdentifier] = useState('chat');
     let [unseenMessagesCount, setUnseenMessageCount] = useState(0);
-    const CHAT_ENDPOINT = 'https://edgar-chat-server.herokuapp.com/'
+    const CHAT_ENDPOINT = 'http://localhost:5000/'
 
     useEffect(() => {
         const params: any = queryString.parse(props.location.search);
