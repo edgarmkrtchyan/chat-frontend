@@ -12,21 +12,21 @@ Smileys are supported. Each smiley such as :) or ;) will be converted to a smile
 
 The Chat also has a Settings section where the users can change the following settings:
 
-- User name;
-- Interface color;
-	- Light;
-	- Dark;
-- Clock Display;
-	- 12 hours;
-	- 24 hours;
-- Send messages on CTRL+ENTER;
-	- On; 
-	- Off;
-- Language (the application supports English and French);
+- User name,
+- Interface color:
+	- Light
+	- Dark
+- Clock Display:
+	- 12 hours
+	- 24 hours
+- Send messages on CTRL+ENTER:
+	- On
+	- Off
+- Language (the application supports English and French)
 
 ## Setup instructions
 
-The Chat application is deployed to Heroku. You can test the chat visiting the following links:
+The Chat application is deployed to Heroku. You can test the chat by visiting the following links:
 
 User 1: https://still-depths-67547.herokuapp.com/chat?userName=FirstUser&chatRoom=doclerRoom  
 User 2: https://still-depths-67547.herokuapp.com/chat?userName=SecondUser&chatRoom=doclerRoom
