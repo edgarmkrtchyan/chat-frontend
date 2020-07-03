@@ -61,3 +61,10 @@
         outline: none;
     }
 }
+
+@media (pointer:coarse) { 
+    .bottom-area {
+        position: absolute;
+        bottom: 0
+    }
+}
