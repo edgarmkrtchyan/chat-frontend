@@ -1,14 +1,14 @@
-# Chat Frontend
+# socket.io based Chat
 
 # What is it
 
-This application is a socket.io based chat. It allows users to chat in the given Chat Room.
+This application is a socket.io based Chat. It allows users to send messages to each other in the given Chat Room.
 
 ## How does it work
 
-The chat initiates the session if it's supplied a userName and a chatRoom in the query parameters (done in query parameters for simplicity sake). When the users join the Chat room, a notification is fired to the rest of the participants letting them know that new users joined. 
+The chat initiates the session if it's supplied a userName and a chatRoom in the query parameters (done in query parameters for simplicity's sake). When the users join the Chat room, a notification is fired from the name of Administration to the rest of the participants letting them know that new user joined. The same way, when the user leaves the chat (closes the browser window) - a notification is sent to the Chat participants letting them know that the user left.
 
-The users can send chat messages to each others. There's also a smileys support. Each smiley such as :) or ;) will be converted to a smiley image.
+Smileys are supported. Each smiley such as :) or ;) will be converted to a smiley image.
 
 The Chat also has a Settings section where the users can change the following settings:
 
@@ -65,7 +65,7 @@ User 1: http://localhost:3000/chat?userName=FirstUser&chatRoom=doclerRoom
 User 2: http://localhost:3000/chat?userName=SecondUser&chatRoom=doclerRoom
 
 
-## Required Features List
+## Required And Implemented Features List
 
 - [x] A socket.io based chat interface. 
 - [x] The UI based on the mockups.
