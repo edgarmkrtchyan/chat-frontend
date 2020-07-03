@@ -94,4 +94,4 @@ User 2: http://localhost:3000/chat?userName=SecondUser&chatRoom=doclerRoom
 - [x] The app is written in TypeScript;
 - [x] It works on every desktop and phone, both landscape and portrait
 - [x] It works on desktop/tablet/phone on Chrome, Firefox and Safari
-- [ ] Apologies, did not write any tests :(
+- [ ] Apologies, did not write any tests for this application :(
