@@ -65,16 +65,14 @@ User 1: http://localhost:3000/chat?userName=FirstUser&chatRoom=doclerRoom
 User 2: http://localhost:3000/chat?userName=SecondUser&chatRoom=doclerRoom
 
 
-## Required And Implemented Features List
+## Features
 
 - [x] A socket.io based chat interface. 
-- [x] The UI based on the mockups.
-- [x] It contains a chat message box, where the sent messages are floating right and the received messages are floating left. 
+- [x] The sent messages are floating right and the received messages are floating left. 
 - [x] The message contains the text of the message, date time and the user name if it is not the current user.
-- [x] There is a text input field and a send button at the bottom of the page.
-- [x] If the user is on another tab and he/she gets a message, the chat tab will blink, until he doesn’t read the message.
+- [x] If the user is on another tab and he/she gets a message, the chat tab will blink, until the message is read.
 - [x] Additional feature: Administrator notifications when somebody joined or left the chat room.
-- [x] Smiles support
+- [x] Smileys support
 - [x] Unread messages count in the chat tab
 - [x] User can modify the following settings:
 	- User name (this is reflected in user's Settings section only - there was no reliable way to show the edited username to the other users in Chat as user name is an identifier telling if the message shown was sent by the current user);
@@ -92,6 +90,3 @@ User 2: http://localhost:3000/chat?userName=SecondUser&chatRoom=doclerRoom
 - [x] React used as framework;
 - [x] Used CSS preprocessor;
 - [x] The app is written in TypeScript;
-- [x] It works on every desktop and phone, both landscape and portrait
-- [x] It works on desktop/tablet/phone on Chrome, Firefox and Safari
-- [ ] Apologies, did not write any tests for this application :(
