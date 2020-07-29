@@ -43,7 +43,7 @@ After all of the components are installed run the following in terminal:
 npm start
 ```
 
-The Chat server repository is located here:
+The Chat server (backend) repository is located here:
 
 https://github.com/edgarmkrtchyan/chat-server
 
